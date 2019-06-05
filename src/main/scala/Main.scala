@@ -39,6 +39,8 @@ object Main extends App {
 
     val matcher = pattern.matcher(temp)
 
+    //TODO pour ignorer le garbage: regarder si le match suivant fitte alphabetiquement entre le match d'avant et le match d'apres. Si non,
+
     while(matcher.find()) {
       val geneGenepanel = matcher.group.replaceAll("(\n)?( )?[0-9]+\\.[0-9]+", "")
 
